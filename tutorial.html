@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.3.x/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-entity environment="preset: default"></a-entity>
+      <!-- Imágenes enmarcadas -->
+      <a-entity id="frame1" position="-5 2 -5" rotation="0 90 0">
+        <a-box width="2.2" height="2.2" depth="0.1" color="#222"></a-box>
+        <a-image src="images/image1.jpg" position="0 0 0.06" width="2" height="2"></a-image>
+      </a-entity>
+
+      <a-entity id="frame2" position="5 2 -5" rotation="0 -90 0">
+        <a-box width="2.2" height="2.2" depth="0.1" color="#222"></a-box>
+        <a-image src="images/image2.jpg" position="0 0 0.06" width="2" height="2"></a-image>
+      </a-entity>
+
+      <a-entity id="frame3" position="0 2 -10">
+        <a-box width="2.2" height="2.2" depth="0.1" color="#222"></a-box>
+        <a-image src="images/image3.jpg" position="0 0 0.06" width="2" height="2"></a-image>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
