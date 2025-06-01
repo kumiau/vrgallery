@@ -5,22 +5,88 @@
   </head>
   <body>
     <a-scene>
-      <a-entity environment="preset: default"></a-entity>
+      <a-entity environment="preset: starry"></a-entity>
       <!-- Imágenes enmarcadas -->
-      <a-entity id="frame1" position="-5 2 -5" rotation="0 90 0">
-        <a-box width="2.2" height="2.2" depth="0.1" color="#222"></a-box>
+	  <!-- marco izquierdo--->
+	   <a-entity id="frame1" position="-5 2 0" rotation="0 90 0">
+        <a-box width="2.2" height="2.2" depth="0.1" color="#05061c"></a-box>
         <a-image src="images/image1.jpg" position="0 0 0.06" width="2" height="2"></a-image>
       </a-entity>
+	  
+	  <a-entity id="frame2" position="-5 2 -4" rotation="0 90 0">
+        <a-box width="2.2" height="2.2" depth="0.1" color="#05061c"></a-box>
+        <a-image src="images/image1.jpg" position="0 0 0.06" width="2" height="2"></a-image>
+      </a-entity>
+	  
+	  
+      <a-entity id="frame3" position="-5 2 -8" rotation="0 90 0">
+        <a-box width="2.2" height="2.2" depth="0.1" color="#05061c"></a-box>
+        <a-image src="images/image1.jpg" position="0 0 0.06" width="2" height="2"></a-image>
+      </a-entity>
+	  
+	  <a-entity id="frame4" position="-5 2 -12" rotation="0 90 0">
+        <a-box width="2.2" height="2.2" depth="0.1" color="#05061c"></a-box>
+        <a-image src="images/image1.jpg" position="0 0 0.06" width="2" height="2"></a-image>
+      </a-entity>
+	  
+	  <!-- marcos centrales -->
+      <a-entity id="frame5" position="2 2 -14">
+        <a-box width="2.2" height="2.2" depth="0.1" color="#05061c"></a-box>
+        <a-image src="images/image3.jpg" position="0 0 0.06" width="2" height="2"></a-image>
+      </a-entity>
 
-      <a-entity id="frame2" position="5 2 -5" rotation="0 -90 0">
-        <a-box width="2.2" height="2.2" depth="0.1" color="#222"></a-box>
+      <a-entity id="frame6 " position="-2 2 -14">
+        <a-box width="2.2" height="2.2" depth="0.1" color="#05061c"></a-box>
+        <a-image src="images/image3.jpg" position="0 0 0.06" width="2" height="2"></a-image>
+      </a-entity>
+	  
+
+	  <!-- marcos derecha -->
+	 
+	  
+
+      <a-entity id="frame7" position="5 2 0" rotation="0 -90 0">
+        <a-box width="2.2" height="2.2" depth="0.1" color="#05061c"></a-box>
+        <a-image src="images/image2.jpg" position="0 0 0.06" width="2" height="2"></a-image>
+      </a-entity>
+	  
+	  <a-entity id="frame8" position="5 2 -4" rotation="0 -90 0">
+        <a-box width="2.2" height="2.2" depth="0.1" color="#05061c"></a-box>
         <a-image src="images/image2.jpg" position="0 0 0.06" width="2" height="2"></a-image>
       </a-entity>
 
-      <a-entity id="frame3" position="0 2 -10">
-        <a-box width="2.2" height="2.2" depth="0.1" color="#222"></a-box>
-        <a-image src="images/image3.jpg" position="0 0 0.06" width="2" height="2"></a-image>
+      <a-entity id="frame9" position="5 2 -8" rotation="0 -90 0">
+        <a-box width="2.2" height="2.2" depth="0.1" color="#05061c"></a-box>
+        <a-image src="images/image2.jpg" position="0 0 0.06" width="2" height="2"></a-image>
       </a-entity>
+	  
+	  <a-entity id="frame10" position="5 2 -12" rotation="0 -90 0">
+        <a-box width="2.2" height="2.2" depth="0.1" color="#05061c"></a-box>
+        <a-image src="images/image2.jpg" position="0 0 0.06" width="2" height="2"></a-image>
+      </a-entity>
+	  
+      <!-- luces -->
+	  
+        <a-light type="ambient" color="#BBB"></a-light>
+        <a-light type="point" intensity="1.5" position="0 3 0"></a-light>
+        <a-light type="spot" intensity="2" position="-2 3 -5" angle="30" penumbra="0.5" target="#frame1"></a-light>
+        <a-light type="spot" intensity="2" position="2 3 -5" angle="30" penumbra="0.5" target="#frame2"></a-light>
+        <a-light type="spot" intensity="2" position="0 3 -3" angle="30" penumbra="0.5" target="#frame3"></a-light>
+	  
+      <!-- pilares -->
+	  <a-cylinder position="-5 0 -2" radius="0.3" height="7" color="#05061c"></a-cylinder> <!-- Columna izquierda -->
+	  <a-cylinder position="-5 0 -6" radius="0.3" height="7" color="#05061c"></a-cylinder> <!-- Columna izquierda -->
+      <a-cylinder position="-5 0 -10" radius="0.3" height="7" color="#05061c"></a-cylinder> <!-- Columna izquierda -->
+	  <a-cylinder position="-5 0 -14" radius="0.3" height="7" color="#05061c"></a-cylinder> <!-- Columna izquierda -->
+      <a-cylinder position="-5 0 2" radius="0.3" height="7" color="#05061c"></a-cylinder> <!-- Columna izquierda -->
+      <a-cylinder position="-0 0 -14" radius="0.3" height="7" color="#05061c"></a-cylinder> <!-- Columna izquierda -->
+      <a-cylinder position="5 0 -2" radius="0.3" height="7" color="#05061c"></a-cylinder> <!-- Columna izquierda -->
+	  <a-cylinder position="5 0 -6" radius="0.3" height="7" color="#05061c"></a-cylinder> <!-- Columna izquierda -->
+      <a-cylinder position="5 0 -10" radius="0.3" height="7" color="#05061c"></a-cylinder> <!-- Columna izquierda -->
+	  <a-cylinder position="5 0 -14" radius="0.3" height="7" color="#05061c"></a-cylinder> <!-- Columna izquierda -->
+      <a-cylinder position="5 0 2" radius="0.3" height="7" color="#05061c"></a-cylinder> <!-- Columna izquierda -->
+	  
+	  <a-entity position="5.5 6 -14" width="5"  wrap-count="40" text="value:Desprogramar la luz; width: 20; text-align: center; font: dejavu"></a-entity> 
     </a-scene>
   </body>
 </html>
